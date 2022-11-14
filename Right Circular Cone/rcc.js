@@ -2,7 +2,7 @@ function calc()
 {
    var r = parseFloat(prompt("Enter the radius"));
    var h = parseFloat(prompt("Enter the height"));
-   var p = parseFloat(prompt("Let pi"));
+   var p = 3.1415926535898
    var sl = Math.sqrt(h*h+r*r);
    var csa = (p)*r*sl;
    var tsa = (p)*r*(sl+r);
