@@ -1,4 +1,7 @@
 # geometry-area-and-volumes
+
+THIS PROJECT IS STILL INCOMPLETE.-
+
 You may use this to find the Surface Area (CSA/TSA) of basic geometric shapes.
 
 To the person reading this...
