@@ -18,8 +18,4 @@ You can use this website for calculating surface area and volumes of some geomet
 
 Once again, thank you so much!
 
-
-A bit about the next update Beta v1.0.1
--A common html page which redirects to respective code page.
--CSA/TSA, Volume of a sphere and hemisphere
--CSA/TSA, Volume of a Right Circular Cone through it's slant height
+[Surface Area and Volume of a Right Circular cone (with height)](https://github.com/Kiriyako/geometry-area-and-volumes/tree/main/Right%20Circular%20Cone)
