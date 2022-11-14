@@ -17,3 +17,9 @@ This code uses the following languages:-
 You can use this website for calculating surface area and volumes of some geometrical shapes. Really basic website but pretty useful, I guess.
 
 Once again, thank you so much!
+
+
+A bit about the next update Beta v1.0.1
+-A common html page which redirects to respective code page.
+-CSA/TSA, Volume of a sphere and hemisphere
+-CSA/TSA, Volume of a Right Circular Cone through it's slant height
