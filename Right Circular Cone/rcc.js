@@ -4,9 +4,9 @@ function calc()
    var h = parseFloat(prompt("Enter the height"));
    var p = parseFloat(prompt("Let pi"));
    var sl = Math.sqrt(h*h+r*r);
-   var csa = p*r*sl;
-   var tsa = p*r*(sl+r);
-   var v = (1/3)*p*r*r*h;
+   var csa = (p)*r*sl;
+   var tsa = (p)*r*(sl+r);
+   var v = (1/3)*(p)*r*r*h;
 
 
 
