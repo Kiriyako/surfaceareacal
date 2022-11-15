@@ -9,7 +9,7 @@ function calc()
    var v = (1/3)*(p)*r*r*h;   
 
 if(h==0)
-document.write("Invalid data. Height > Radius. Refresh to start over.")
+document.write("Invalid data. Slant Height > Radius. Refresh to start over.")
 
    var csapara = document.getElementById("csa");
    var tsapara = document.getElementById("tsa");
