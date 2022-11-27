@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<body style="font-family: 'Poppins', sans-serif;"></body>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+  <link rel = "icon" href = "img/favicon.ico"  type = "image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <title> CSA, TSA and Volume of a Cylinder </title>
+    
+</head>
+<style>
+    ::selection {
+  color: white;
+  background: black;
+}
+
+.button {
+  background-color: #009900;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+<body>
+    <h1> CSA, TSA and Volume of a Cylinder</h1>
+    
+    <HTML>
+      <HEAD>
+          <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-J5VNX31VQK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-J5VNX31VQK');
+</script>
+      <TITLE>Test Input</TITLE>
+      <SCRIPT LANGUAGE="JavaScript">
+      function testResults (form) {
+        var p = document.getElementById('p').value;
+          var r = document.getElementById('r').value;
+          var h = document.getElementById('h').value;
+          if (r == "" && h == "") {
+        alert("Please enter the dimensions!");
+        return false;
+    };
+          var csa = 2*p*r*h;
+          var tsa = (2*p*r*h) + (2*p*r*r);
+          var v = p*r*r*h;   
+          var unit = document.getElementById('select1').value;
+          document.write("Radius: " + r + " " + unit +" " + "<p>"  + "Height: " + h + " " + unit + " "+ "<p>" +  "Curved Surface Area: " + csa + " "+ unit +  "<sup> 2 </sup>" +  " "+ "<p>" + "Total Surface Area: " + tsa + " "+ unit + " "+  "<sup> 2 </sup>" +  "<p>" + "Volume: " + v  + " " + unit +  "<sup> 3 </sup>" +  " " + "<p>" + "Reload to restart." );
+      }
+      </SCRIPT>
+      </HEAD>
+      <BODY>
+      <FORM NAME="myform" ACTION="" METHOD="GET">Enter the radius: <BR>
+      <INPUT TYPE="text" autocomplete="off" id="r" ><P>
+        <text> Enter the height: <br> </text>
+      <INPUT TYPE="text" autocomplete="off" id="h"><P>
+        <text> Let pi: <br> </text>
+      <INPUT TYPE="text" autocomplete="off" id="p" VALUE="3.1415926535898"><P>
+
+        <p> Unit:
+          <select id="select1">
+              <option value="m">m</option>
+              <option value="cm">cm</option>
+              <option value="mm">mm</option>
+              <option value="ft">ft</option>
+              <option value="in">in</option>
+
+          </select>
+          <p></p>
+          <TEXT> Note: Unit is only given for convenience and does NOT affect the output.</TEXT>
+      </p>
+      </FORM>
+      </BODY>
+      </HTML>
+
+    <button id = "calc" Value="Click" onClick="testResults(this.form)" class ="button">Calculate</button>
+    </script>
+
+</body>
+
+</html> 
