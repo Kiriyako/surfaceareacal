@@ -17,5 +17,3 @@ This code uses the following languages:-
 You can use this website for calculating surface area and volumes of some geometrical shapes. Really basic website but pretty useful, I guess.
 
 Once again, thank you so much!
-
-[Surface Area and Volume of a Right Circular cone (with height)](https://github.com/Kiriyako/geometry-area-and-volumes/tree/main/Right%20Circular%20Cone)
