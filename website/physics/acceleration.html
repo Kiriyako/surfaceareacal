@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Acceleration Calculator</title>
+	<title>Test Input</title>
+</head>
+<body style="font-family: 'Poppins', sans-serif;">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<style>
+	       ::selection {
+	     color: white;
+	     background: black;
+	   }
+	   
+	   .button {
+	 background-color: #FF0563;
+	 border: none;
+	 color: white;
+	 padding: 15px 32px;
+	 text-align: center;
+	 text-decoration: none;
+	 display: inline-block;
+	 font-size: 16px;
+	 margin: 4px 2px;
+	 cursor: pointer;
+	}
+
+	</style>
+	<h1>Acceleration calculator (using first equation of motion)</h1><!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-J5VNX31VQK">
+	</script> 
+	<script>
+	 window.dataLayer = window.dataLayer || [];
+	 function gtag(){dataLayer.push(arguments);}
+	 gtag('js', new Date());
+
+	 gtag('config', 'G-J5VNX31VQK');
+	</script> 
+	<script language="JavaScript">
+	   function testResults (form) {
+	       var u = document.getElementById('u').value
+	       var v = document.getElementById('v').value;
+	       var t = document.getElementById('t').value;
+
+	       var a= (v-u)/t
+	       document.write("Acceleration: " + a + " m/s" + "<sup> 2 <\/sup>");
+	       }
+	</script>
+	<form action="" id="myform" method="get" name="myform">
+		Enter the initial velocity:<br>
+		<input autocomplete="off" id="u" type="text">
+		<p>Enter the final velocity:<br>
+		<input autocomplete="off" id="v" type="text"></p>
+		<p>Enter the time:<br>
+		<input autocomplete="off" id="t" type="text"></p>
+		<p></p>
+	</form><button class="button" id="calc" onclick="testResults(this.form)" value="Click">Calculate</button> <br>
+	<h2>Acceleration</h2>Acceleration is the rate of change of velocity with respect to time. It is a vector quantity that has both magnitude and direction. The SI unit of acceleration is the meter per second squared (m/s<sup>2</sup>). Acceleration can be caused by a force acting on an object, such as gravity or friction.
+	<h2>Formula</h2>a = v-u/t 
+</body>
+</html>

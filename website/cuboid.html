@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Surface area and Volume of a Cuboid</title>
+	<title>Test Input</title>
+</head>
+<body style="font-family: 'Poppins', sans-serif;">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="img/favicon.ico" rel="icon" type="image/x-icon">
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<style>
+	       ::selection {
+	     color: white;
+	     background: black;
+	   }
+	   
+	   .button {
+	 background-color: #009900;
+	 border: none;
+	 color: white;
+	 padding: 15px 32px;
+	 text-align: center;
+	 text-decoration: none;
+	 display: inline-block;
+	 font-size: 16px;
+	 margin: 4px 2px;
+	 cursor: pointer;
+	}
+
+	</style>
+	<h1>CSA, TSA and Volume of a Cuboid</h1><!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-J5VNX31VQK">
+	</script> 
+	<script>
+	 window.dataLayer = window.dataLayer || [];
+	 function gtag(){dataLayer.push(arguments);}
+	 gtag('js', new Date());
+
+	 gtag('config', 'G-J5VNX31VQK');
+	</script> 
+	<script language="JavaScript">
+	   function testResults (form) {
+	       var l = document.getElementById('l').value
+	       var w = document.getElementById('w').value;
+	       var h = document.getElementById('h').value;
+
+	       var tsa = 2*(l*w+l*h+w*h);
+	       var csa = (2*h*l)+(2*h*w);
+	       var v = l*w*h;  
+	       var unit = document.getElementById('select1').value;
+	       document.write("Length: " + l + " " + unit +" " + "<p>"  + "Width: " + w + " " + unit +" " + "<p>"  + "Height: " + h + " " + unit +" " + "<p>"  + "Curved Surface Area: " + csa + " " + unit + "<sup> 2 <\/sup>" + " "+ "<p>" +  "Total Surface Area: " + tsa + " " + unit + "<sup> 2 <\/sup>" + " "+ "<p>" + "Volume: " + v + " "+ unit +  "<sup> 3 <\/sup>" + " " + "<p>" + "Reload to restart." );
+	       }
+	</script>
+	<form action="" id="myform" method="get" name="myform">
+		Enter the length:<br>
+		<input autocomplete="off" id="l" type="text">
+		<p>Enter the width:<br>
+		<input autocomplete="off" id="w" type="text"></p>
+		<p>Enter the height:<br>
+		<input autocomplete="off" id="h" type="text"></p>
+		<p></p>
+		<p>Unit: <select id="select1">
+			<option value="m">
+				m
+			</option>
+			<option value="cm">
+				cm
+			</option>
+			<option value="mm">
+				mm
+			</option>
+			<option value="ft">
+				ft
+			</option>
+			<option value="in">
+				in
+			</option>
+		</select></p>
+		<p></p>Note: Unit is only given for convenience and does NOT affect the output.
+		<p></p>
+	</form><button class="button" id="calc" onclick="testResults(this.form)" value="Click">Calculate</button> 
+</body>
+</html>
