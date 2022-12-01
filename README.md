@@ -7,7 +7,7 @@ To the person reading this...
 Thank you for using my code! :)
 This is my first code and I am really glad that you are using it.
 
-This code uses the following languages:-
+This code uses the following languages:
  i) HTML
  ii) JavaScript (internal)
  iii) CSS (internal)
