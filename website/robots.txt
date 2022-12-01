@@ -1,4 +1,0 @@
-User-Agent: *
-Allow: /
-
-Sitemap: https://surfaceareacal.000webhostapp.com/sitemap.xml
