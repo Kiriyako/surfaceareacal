@@ -6,111 +6,109 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-J5VNX31VQK">
 	</script>
 	<script>
-	    window.dataLayer = window.dataLayer || [];
-	    function gtag(){dataLayer.push(arguments);}
-	    gtag('js', new Date());
+	       window.dataLayer = window.dataLayer || [];
+	       function gtag(){dataLayer.push(arguments);}
+	       gtag('js', new Date());
 
-	    gtag('config', 'G-J5VNX31VQK');
+	       gtag('config', 'G-J5VNX31VQK');
 	</script>
 	<link href="img/favicon.ico" rel="icon" type="image/x-icon">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-  
-
 	<meta content="Surface Area and Volume Calculator. Find the surface area of Cube, Cylinder, Cone, Sphere and many more shapes!" name="description">
 	<style>
-	   ::-moz-selection { color: white;
-	   background: black;
-	   }
-	   ::selection {
-	   color: white;
-	   background: black;
-	   }
+	      ::-moz-selection { color: white;
+	      background: black;
+	      }
+	      ::selection {
+	      color: white;
+	      background: black;
+	      }
 	</style>
 	<style>
 
-	   a:link {
-	   color: #009900;
-	   background-color: transparent;
-	   text-decoration: none;
-	   }
-	   a:visited {
-	   color: #009900;
-	   }
-	   a:hover {  
-	   color: rgb(255, 0, 102);
-	   background-color: transparent;
-	   text-decoration: none;
-	   }
-	   #searchbar{
-	   margin-left: 0%;
-	   padding:15px;
-	   border-radius: 90px;
-	   border-color: rgb(47, 47, 47);
-	   }
-	   input[type=text] {
-	   width: 30%;
-	   -webkit-transition: width 0.15s ease-in-out;
-	   transition: width 0.15s ease-in-out;
-	   }
-	   /* When the input field gets focus,
-	   change its width to 100% */
-	   input[type=text]:focus {
-	    width: 40%;
-	   }
-	   #list{
-	   font-size: 1.5em;
-	   margin-left: 0px;
-	   }
-	   .shape{
-	   display: list-item; } 
+	      a:link {
+	      color: #009900;
+	      background-color: transparent;
+	      text-decoration: none;
+	      }
+	      a:visited {
+	      color: #009900;
+	      }
+	      a:hover {  
+	      color: rgb(255, 0, 102);
+	      background-color: transparent;
+	      text-decoration: none;
+	      }
+	      #searchbar{
+	      margin-left: 0%;
+	      padding:15px;
+	      border-radius: 90px;
+	      border-color: rgb(47, 47, 47);
+	      }
+	      input[type=text] {
+	      width: 30%;
+	      -webkit-transition: width 0.15s ease-in-out;
+	      transition: width 0.15s ease-in-out;
+	      }
+	      /* When the input field gets focus,
+	      change its width to 100% */
+	      input[type=text]:focus {
+	       width: 40%;
+	      }
+	      #list{
+	      font-size: 1.5em;
+	      margin-left: 0px;
+	      }
+	      .shape{
+	      display: list-item; } 
 	</style>
 	<link href="https://fonts.googleapis.com" rel="preconnect">
 	<link href="https://fonts.gstatic.com" rel="preconnect">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&amp;display=swap" rel="stylesheet">
-	<title>Surface Area and Volume Calculator</title>
+	<title>surfaceareacal</title>
 </head>
 <body style="font-family: 'Poppins',sans-serif;">
 	<img alt="" src="img/logo.png" style="width: 435px; height: 42px;"><br>
 	<p></p>
 	<script language="JavaScript">
-	   function search_shape() {
-	   let input = document.getElementById('searchbar').value
-	   input=input.toLowerCase();
-	   let x = document.getElementsByClassName('shape');
-	   for (i = 0; i < x.length; i++) { if (!x[i].innerHTML.toLowerCase().includes(input)) {
-	   x[i].style.display="none";
-	   }
-	   else {
-	   x[i].style.display="list-item"; }
-	   }
-	   }
+	      function search_shape() {
+	      let input = document.getElementById('searchbar').value
+	      input=input.toLowerCase();
+	      let x = document.getElementsByClassName('shape');
+	      for (i = 0; i < x.length; i++) { if (!x[i].innerHTML.toLowerCase().includes(input)) {
+	      x[i].style.display="none";
+	      }
+	      else {
+	      x[i].style.display="list-item"; }
+	      }
+	      }
 	</script> <!-- input tag -->
 	<form>
 		<input id="searchbar" name="search" onkeyup="search_shape()" placeholder="Search a shape..." type="text"><!-- ordered list -->
 	</form>
 	<ol id="list">
 		<li class="shape">
-			<a href="cube.html">Cube</a>
+			<a href="cube">Cube</a>
 		</li>
 		<li class="shape">
-			<a href="cuboid.html">Cuboid</a>
+			<a href="cuboid">Cuboid</a>
 		</li>
 		<li class="shape">
-			<a href="cylinder.html">Cylinder</a>
+			<a href="cylinder">Cylinder</a>
 		</li>
 		<li class="shape">
-			<a href="cone%20h.html">Right Circular Cone (using it's height)</a>
+			<a href="cone h">Right Circular Cone (using it's height)</a>
 		</li>
 		<li class="shape">
-			<a href="cone%20l.html">Right Circular Cone (using it's slant height)</a>
+			<a href="cone l">Right Circular Cone (using it's slant height)</a>
 		</li>
 		<li class="shape">
-			<a href="sh.html">Sphere and Hemisphere</a>
+			<a href="sh">Sphere and Hemisphere</a>
 		</li>
 		<li class="shape">
-			<a href="square pyramid.html">Square Pyramid</a>
+			<a href="square%20pyramid">Square Pyramid</a>
 		</li>
-	</ol>Also try <a href="physics/index.html">Physics Calculator</a> .
-	<p><a href="FAQ.html">FAQ</a> | <a href="release%20history.html">Release History</a> | <a href="privacy%20policy.html">Privacy Policy</a></p>Version 4.0.0
+	</ol>Also try <a href="physics/index">Physics Calculator</a>
+	<p><a href="FAQ">FAQ</a> | <a href="release%20history">Release History</a> | <a href="privacy%20policy">Privacy Policy</a></p>Version 4.1.0
 </body>
 </html>
