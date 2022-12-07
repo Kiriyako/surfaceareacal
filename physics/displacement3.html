@@ -1,7 +1,7 @@
-y<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Buoyant Force Calculator</title>
+	<title>Displacement Calculator</title>
 </head>
 <body style="font-family: 'Poppins', sans-serif;">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -28,7 +28,7 @@ y<!DOCTYPE html>
 	   }
 
 	</style>
-	<h1>Buoyant Force calculator</h1><!-- Google tag (gtag.js) -->
+	<h1>Displacement Calculator (using third equation of motion)</h1><!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-J5VNX31VQK">
 	</script> 
 	<script>
@@ -40,25 +40,27 @@ y<!DOCTYPE html>
 	</script> 
 	<script language="JavaScript">
 	      function testResults (form) {
-	          var p = document.getElementById('p').value
-	          var g = document.getElementById('g').value;
+	          var u = document.getElementById('u').value
 	          var v = document.getElementById('v').value;
-
-	          var bf= p*g*v
-	          document.write("Buoyant Force: " + bf + " " + "N");
+              var a = document.getElementById('a').value;
+              var f = v*v
+              var g = u*u
+	          var h=  f-g
+              var i = h/(2*a)
+	          document.write("Displacement: " + i + " " + "m");
 	          }
 	</script>
 	<form action="" id="myform" method="get" name="myform">
-		Enter the fluid density:<br>
-		<input autocomplete="off" id="p" type="text">
-		<p>Enter the fluid volume:<br>
+		Enter the initial velocity:<br>
+		<input autocomplete="off" id="u" type="text">
+		<p>Enter the final velocity:<br>
 		<input autocomplete="off" id="v" type="text"></p>
+        <p>Enter the accelaration:<br>
+            <input autocomplete="off" id="a" type="text"></p>
 		<p></p>
-		<p>Enter the acceleration due to gravity (g):<br>
-		<input autocomplete="off" id="g" type="text" value="9.81"></p>
 	</form><button class="button" id="calc" onclick="testResults(this.form)" value="Click">Calculate</button><br>
-	<h2>Buoyancy</h2>
-	<p>The buoyant force is the upward force exerted on an object by a fluid in which it is immersed. The magnitude of the buoyant force is equal to the weight of the displaced fluid. When an object is submerged in a fluid, it displaces a volume of that fluid equal to its own volume. The weight of this displaced fluid creates an upward force on the object that counteracts its gravitational pull downward.</p>
-	<h2>Formula</h2>ρgv
+	<h2>Displacement</h2>
+	<p> Displacement is the shortest distance covered between two points. Displacement can be caused by many factors, including forces acting on the object. When an object is displaced, it gains velocity and its new position is usually different from its original position. It is denoted by m. It is a vector quantity.</p>
+	<h2>Formula</h2>2as= v<sup>2</sup> - u<sup>2</sup>
 </body>
 </html>
