@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Force Calculator</title>
+</head>
+<body style="font-family: 'Poppins', sans-serif;">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<link href="https://fonts.googleapis.com" rel="preconnect">
+	<link href="https://fonts.gstatic.com" rel="preconnect">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+	<style>
+	          ::selection {
+	        color: white;
+	        background: black;
+	      }
+	      
+	      .button {
+	    background-color: #FF0563;
+	    border: none;
+	    color: white;
+	    padding: 15px 32px;
+	    text-align: center;
+	    text-decoration: none;
+	    display: inline-block;
+	    font-size: 16px;
+	    margin: 4px 2px;
+	    cursor: pointer;
+	   }
+
+	</style>
+	<h1>Force calculator</h1><!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-J5VNX31VQK">
+	</script> 
+	<script>
+	    window.dataLayer = window.dataLayer || [];
+	    function gtag(){dataLayer.push(arguments);}
+	    gtag('js', new Date());
+
+	    gtag('config', 'G-J5VNX31VQK');
+	</script> 
+	<script language="JavaScript">
+	      function testResults (form) {
+	          var m = document.getElementById('m').value
+	          var a = document.getElementById('a').value;
+
+	          var f= m*a
+	          document.write("Force: " + f + " " + "N");
+	          }
+	</script>
+	<form action="" id="myform" method="get" name="myform">
+		Enter the mass:<br>
+		<input autocomplete="off" id="m" type="text">
+		<p>Enter the acceleration:<br>
+		<input autocomplete="off" id="a" type="text"></p>
+		<p>
+	</form><button class="button" id="calc" onclick="testResults(this.form)" value="Click">Calculate</button><br>
+	<h2>Force</h2>
+	<p>Force is a vector quantity that is measured in terms of mass, acceleration, and time. It is the product of mass and acceleration. Force can be either attractive or repulsive. The SI unit for force is the newton (N).</p>
+	<h2>Formula</h2>F = ma
+</body>
+</html>
