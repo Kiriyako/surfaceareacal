@@ -4,15 +4,12 @@ To the person reading this...
 Thank you for using my code! :)
 
 
-You can use this website for calculating surface area and volumes of some geometrical shapes. Really basic website but pretty useful, I guess.
+This website allows you to compute the surface area and volumes of various geometric objects. Really simple webpage, but I believe it's really useful.
 
-This is my first code and I am really glad that you are using it.
+You are using my first code, and I'm really happy about that.
 
-This code uses the following languages
- i) HTML
- ii) JavaScript (internal)
- iii) CSS (internal)
+JavaScript, HTML, and CSS are used in this application.
 
-~~I am constantly updating this website so that you can get the best user experience. Feel free to recommend any changes whenever you feel like! I'd be more than happy to review and implement those changes!~~ This web app project is complete.
+This web application project is finished.
 
-Once again, thank you so much!
+Thank you very much once more!
