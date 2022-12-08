@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Buoyant Force Calculator</title>
+	<title>Potential Energy Calculator</title>
 </head>
 <body style="font-family: 'Poppins', sans-serif;">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -28,7 +28,7 @@
 	   }
 
 	</style>
-	<h1>Buoyant Force calculator</h1><!-- Google tag (gtag.js) -->
+	<h1>Potential Energy calculator</h1><!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-J5VNX31VQK">
 	</script> 
 	<script>
@@ -40,25 +40,25 @@
 	</script> 
 	<script language="JavaScript">
 	      function testResults (form) {
-	          var p = document.getElementById('p').value
+	          var m = document.getElementById('m').value
 	          var g = document.getElementById('g').value;
-	          var v = document.getElementById('v').value;
+	          var h = document.getElementById('h').value;
 
-	          var bf= p*g*v
-	          document.write("Buoyant Force: " + bf + " " + "N");
+	          var ep= m*g*h
+	          document.write("Potential Energy: " + ep + " " + "J");
 	          }
 	</script>
 	<form action="" id="myform" method="get" name="myform">
-		Enter the fluid density:<br>
-		<input autocomplete="off" id="p" type="text">
-		<p>Enter the fluid volume:<br>
-		<input autocomplete="off" id="v" type="text"></p>
+		Enter the mass:<br>
+		<input autocomplete="off" id="m" type="text">
+		<p>Enter the height:<br>
+		<input autocomplete="off" id="h" type="text"></p>
 		<p></p>
 		<p>Enter the acceleration due to gravity (g):<br>
 		<input autocomplete="off" id="g" type="text" value="9.81"></p>
 	</form><button class="button" id="calc" onclick="testResults(this.form)" value="Click">Calculate</button><br>
-	<h2>Buoyancy</h2>
-	<p>The buoyant force is the upward force exerted on an object by a fluid in which it is immersed. The magnitude of the buoyant force is equal to the weight of the displaced fluid. When an object is submerged in a fluid, it displaces a volume of that fluid equal to its own volume. The weight of this displaced fluid creates an upward force on the object that counteracts its gravitational pull downward.</p>
-	<h2>Formula</h2>ρgv
+	<h2>Potential Energy</h2>
+	<p>Potential energy is a type of stored energy that can be released and converted into kinetic energy. It is often associated with the position or configuration of an object, such as gravitational potential energy which depends on the height of an object above the ground, or elastic potential which occurs when something is stretched or compressed. </p>
+	<h2>Formula</h2>Ep = mgh
 </body>
 </html>
