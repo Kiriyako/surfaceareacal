@@ -14,6 +14,6 @@ This code uses the following languages:
  iii) CSS (internal)
  -
 
-I am constantly updating this website so that you can get the best user experience. Feel free to recommend any changes whenever you feel like! I'd be more than happy to review and implement those changes!
+~~I am constantly updating this website so that you can get the best user experience. Feel free to recommend any changes whenever you feel like! I'd be more than happy to review and implement those changes!~~ This web app project is complete.
 
 Once again, thank you so much!
